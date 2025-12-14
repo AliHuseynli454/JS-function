@@ -1,0 +1,777 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgb(236, 253, 255);
+}
+header .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .privateIcon {
+  font-size: 20px;
+  display: none;
+}
+header .container nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+header .container nav ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Poppins";
+}
+header .container .icons {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+header .container .icons i {
+  font-size: 17px;
+}
+
+#sofa {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(236, 253, 255);
+  position: relative;
+}
+#sofa .container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+#sofa .container .left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#sofa .container .left h1 {
+  font-family: "Poppins";
+  font-size: 66px;
+  line-height: 72px;
+  font-weight: 700;
+}
+#sofa .container .left p {
+  font-family: "Poppins";
+  font-size: 15px;
+  line-height: 27px;
+  font-weight: 300;
+}
+#sofa .container .left button {
+  width: 50%;
+  padding: 18px 0;
+  border: none;
+  background-color: #ff3368;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+#sofa .container .left button:hover {
+  background-color: rgb(255, 65, 59);
+}
+#sofa .container .right {
+  width: auto;
+}
+
+#awesome {
+  width: 100%;
+  margin-top: 32px;
+}
+#awesome .container {
+  width: 85%;
+  margin: 0 auto;
+}
+#awesome .container .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#awesome .container .top .left {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#awesome .container .top .left h2 {
+  font-family: "Poppins";
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 700;
+}
+#awesome .container .top .left span {
+  color: rgb(173, 173, 173);
+  font-family: "Poppins";
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+}
+#awesome .container .top .right {
+  width: 20%;
+}
+#awesome .container .top .right button {
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  font-weight: 700;
+}
+#awesome .container .top .right .borderLeft {
+  border-right: 1px solid black;
+}
+#awesome .container .bottom {
+  width: 100%;
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#awesome .container .bottom .card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 23%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#awesome .container .bottom .card:hover {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+#awesome .container .bottom .card:hover .yazi .btn {
+  opacity: 1;
+}
+#awesome .container .bottom .card .img {
+  width: 100%;
+}
+#awesome .container .bottom .card .img img {
+  width: 100%;
+}
+#awesome .container .bottom .card .yazi {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#awesome .container .bottom .card .yazi h3 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+#awesome .container .bottom .card .yazi span {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  font-family: "Poppins";
+}
+#awesome .container .bottom .card .yazi .btn {
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#awesome .container .bottom .card .yazi .btn button {
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  color: #ff3368;
+}
+#awesome .container .bottom .card .yazi .btn i {
+  font-size: 20px;
+}
+
+#discount {
+  width: 100%;
+  background-color: rgb(236, 253, 255);
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#discount .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#discount .container .photo {
+  width: 100%;
+}
+#discount .container .photo img {
+  width: 60%;
+}
+#discount .container .yazi {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#discount .container .yazi h2 {
+  font-family: "Poppins";
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 700;
+}
+#discount .container .yazi .form {
+  display: flex;
+  justify-content: space-around;
+}
+#discount .container .yazi .form form {
+  width: 50%;
+}
+#discount .container .yazi .form form input {
+  padding: 20px 33%;
+  border: none;
+}
+#discount .container .yazi .form button {
+  padding: 18px 25px;
+  border: none;
+  background-color: #ff3368;
+  color: #fff;
+  font-family: "Poppins";
+}
+
+#photo {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+#photo .container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+#photo .container .color {
+  color: black;
+  display: flex;
+}
+#photo .container img {
+  width: 15%;
+  height: auto;
+  margin: 20px;
+}
+
+footer {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+footer .container {
+  width: 90%;
+  margin: 0 auto;
+}
+footer .container .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .container .top .products {
+  width: 18%;
+}
+footer .container .top .products h5 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+footer .container .top .products a {
+  text-decoration: none;
+  display: block;
+  padding: 8px 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: "Poppins";
+  color: grey;
+}
+footer .container .top .products a:hover {
+  color: #ff3368;
+}
+footer .container .top .Newletter {
+  width: 18%;
+}
+footer .container .top .Newletter h5 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: "Poppins";
+  display: block;
+}
+footer .container .top .Newletter p {
+  padding: 8px 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: "Poppins";
+  color: grey;
+}
+footer .container .top .Newletter .form {
+  display: flex;
+  justify-content: space-around;
+}
+footer .container .top .Newletter .form form {
+  width: 100%;
+}
+footer .container .top .Newletter .form form input {
+  padding: 20px 33%;
+}
+footer .container .top .Newletter .form button {
+  padding: 18px 25px;
+  border: none;
+  background-color: #ff3368;
+  color: #fff;
+  font-family: "Poppins";
+}
+footer .container .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+footer .container .bottom p {
+  padding: 8px 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: "Poppins";
+  color: grey;
+}
+footer .container .bottom i {
+  color: grey;
+}
+footer .container .bottom i:hover {
+  color: #ff3368;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    width: 100%;
+    height: auto;
+  }
+  header .container {
+    width: 100%;
+    height: auto;
+  }
+  header .container .privateIcon {
+    display: block;
+  }
+  header .container nav {
+    display: none;
+  }
+  header .container .icons {
+    width: 25%;
+  }
+  #sofa {
+    width: 100%;
+    height: auto;
+  }
+  #sofa .container {
+    width: 90%;
+    height: auto;
+    position: static;
+  }
+  #sofa .container .left {
+    width: 100%;
+    height: auto;
+  }
+  #sofa .container .left h1 {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+  #sofa .container .right {
+    display: none;
+  }
+  #awesome {
+    width: 100%;
+    height: auto;
+  }
+  #awesome .container {
+    width: 100%;
+    height: auto;
+  }
+  #awesome .container .top {
+    width: 100%;
+    height: auto;
+  }
+  #awesome .container .top .left {
+    width: 50%;
+  }
+  #awesome .container .top .left h2 {
+    font-size: 20px;
+  }
+  #awesome .container .top .left span {
+    font-size: 13px;
+  }
+  #awesome .container .top .right {
+    width: 30%;
+  }
+  #awesome .container .top .right button {
+    font-weight: 300;
+    display: flex;
+  }
+  #awesome .container .top .right .borderLeft {
+    border-bottom: 1px solid black;
+    border-right: none;
+  }
+  #awesome .container .bottom {
+    width: 100%;
+    height: auto;
+  }
+  #awesome .container .bottom .card {
+    width: 100%;
+    height: auto;
+  }
+  #discount {
+    width: 100%;
+  }
+  #discount .container {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  #discount .container .photo {
+    width: 100%;
+  }
+  #discount .container .yazi h2 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  #discount .container .yazi .form {
+    width: 100%;
+  }
+  #photo {
+    width: 100%;
+  }
+  #photo .container {
+    width: 95%;
+  }
+  #photo .container .photo {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  #photo .container .photo img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    height: auto;
+  }
+  header .container {
+    width: 100%;
+    height: auto;
+  }
+  header .container .privateIcon {
+    display: block;
+  }
+  header .container nav {
+    display: none;
+  }
+  header .container .icons {
+    width: 25%;
+  }
+  #sofa {
+    width: 100%;
+    height: auto;
+  }
+  #sofa .container {
+    width: 90%;
+    height: auto;
+    position: static;
+  }
+  #sofa .container .left {
+    width: 100%;
+    height: auto;
+  }
+  #sofa .container .left h1 {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+  #sofa .container .right {
+    display: none;
+  }
+  #awesome {
+    width: 100%;
+    height: auto;
+  }
+  #awesome .container {
+    width: 100%;
+    height: auto;
+  }
+  #awesome .container .top {
+    width: 100%;
+    height: auto;
+  }
+  #awesome .container .top .left {
+    width: 50%;
+  }
+  #awesome .container .top .left h2 {
+    font-size: 20px;
+  }
+  #awesome .container .top .left span {
+    font-size: 13px;
+  }
+  #awesome .container .top .right {
+    width: 30%;
+  }
+  #awesome .container .top .right button {
+    font-weight: 300;
+    display: flex;
+  }
+  #awesome .container .top .right .borderLeft {
+    border-bottom: 1px solid black;
+    border-right: none;
+  }
+  #awesome .container .bottom {
+    width: 100%;
+    height: auto;
+  }
+  #awesome .container .bottom .card {
+    width: 45%;
+    height: auto;
+  }
+  #discount {
+    width: 100%;
+  }
+  #discount .container {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  #discount .container .photo {
+    width: 100%;
+  }
+  #discount .container .yazi h2 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  #discount .container .yazi .form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  header {
+    width: 100%;
+    height: auto;
+  }
+  header .container {
+    width: 100%;
+    height: auto;
+  }
+  header .container .privateIcon {
+    display: block;
+  }
+  header .container nav {
+    display: none;
+  }
+  header .container .icons {
+    width: 25%;
+  }
+  #sofa {
+    width: 100%;
+    height: auto;
+  }
+  #sofa .container {
+    width: 90%;
+    height: auto;
+    position: static;
+  }
+  #sofa .container .left {
+    width: 100%;
+    height: auto;
+  }
+  #sofa .container .left h1 {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+  #sofa .container .right {
+    display: none;
+  }
+  #awesome {
+    width: 100%;
+    height: auto;
+  }
+  #awesome .container {
+    width: 100%;
+    height: auto;
+  }
+  #awesome .container .top {
+    width: 100%;
+    height: auto;
+  }
+  #awesome .container .top .left {
+    width: 50%;
+  }
+  #awesome .container .top .left h2 {
+    font-size: 20px;
+  }
+  #awesome .container .top .left span {
+    font-size: 13px;
+  }
+  #awesome .container .top .right {
+    width: 30%;
+  }
+  #awesome .container .top .right button {
+    font-weight: 300;
+    display: flex;
+  }
+  #awesome .container .top .right .borderLeft {
+    border-bottom: 1px solid black;
+    border-right: none;
+  }
+  #awesome .container .bottom {
+    width: 100%;
+    height: auto;
+  }
+  #awesome .container .bottom .card {
+    width: 30%;
+    height: auto;
+  }
+  #discount {
+    width: 100%;
+  }
+  #discount .container {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  #discount .container .photo {
+    width: 100%;
+  }
+  #discount .container .yazi h2 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  #discount .container .yazi .form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header {
+    width: 100%;
+    height: auto;
+  }
+  header .container {
+    width: 100%;
+    height: auto;
+  }
+  header .container .privateIcon {
+    display: block;
+  }
+  header .container nav {
+    display: none;
+  }
+  header .container .icons {
+    width: 25%;
+  }
+  #sofa {
+    width: 100%;
+    height: auto;
+  }
+  #sofa .container {
+    width: 90%;
+    height: auto;
+    position: static;
+  }
+  #sofa .container .left {
+    width: 100%;
+    height: auto;
+  }
+  #sofa .container .left h1 {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+  #sofa .container .right {
+    display: none;
+  }
+  #awesome {
+    width: 100%;
+    height: auto;
+  }
+  #awesome .container {
+    width: 100%;
+    height: auto;
+  }
+  #awesome .container .top {
+    width: 100%;
+    height: auto;
+  }
+  #awesome .container .top .left {
+    width: 50%;
+  }
+  #awesome .container .top .left h2 {
+    font-size: 20px;
+  }
+  #awesome .container .top .left span {
+    font-size: 13px;
+  }
+  #awesome .container .top .right {
+    width: 30%;
+  }
+  #awesome .container .top .right button {
+    font-weight: 300;
+    display: flex;
+  }
+  #awesome .container .top .right .borderLeft {
+    border-bottom: 1px solid black;
+    border-right: none;
+  }
+  #awesome .container .bottom {
+    width: 100%;
+    height: auto;
+  }
+  #awesome .container .bottom .card {
+    width: 23%;
+    height: auto;
+  }
+  #discount {
+    width: 100%;
+  }
+  #discount .container {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  #discount .container .photo {
+    width: 100%;
+  }
+  #discount .container .yazi h2 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  #discount .container .yazi .form {
+    width: 100%;
+  }
+}
